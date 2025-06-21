@@ -9,7 +9,7 @@
 - Java 17+
 - Spring Boot
 - Spring Data JPA (Hibernate)
-- H2 / PostgreSQL
+- MySQL
 - Thymeleaf
 - Lombok
 - Maven
