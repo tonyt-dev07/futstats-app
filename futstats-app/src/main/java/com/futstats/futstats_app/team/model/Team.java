@@ -32,7 +32,7 @@ public class Team {
     @Column(nullable = false)
     private String ground;
     @Column(nullable = false)
-    private String capacity;
+    private double capacity;
     @Column(nullable = false)
     private String owner;
     @Column(nullable = false)
