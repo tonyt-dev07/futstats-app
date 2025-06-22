@@ -6,7 +6,7 @@
 
 ## 🔧 Технологии
 
-- Java 17+
+- Java 21
 - Spring Boot
 - Spring Data JPA (Hibernate)
 - MySQL
