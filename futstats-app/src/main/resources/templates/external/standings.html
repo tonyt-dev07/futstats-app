@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>League Standings</title>
+</head>
+<body>
+<h2>Standings for <span th:text="${leagueCode}"></span></h2>
+
+<table border="1">
+    <thead>
+    <tr>
+        <th>Pos</th>
+        <th>Crest</th>
+        <th>Team</th>
+        <th>Played</th>
+        <th>W</th>
+        <th>D</th>
+        <th>L</th>
+        <th>GF</th>
+        <th>GA</th>
+        <th>Pts</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="entry : ${standings}">
+        <td th:text="${entry.position}"></td>
+        <td><img th:src="${entry.team.crest}" alt="crest" width="25"/></td>
+        <td th:text="${entry.team.name}"></td>
+        <td th:text="${entry.playedGames}"></td>
+        <td th:text="${entry.won}"></td>
+        <td th:text="${entry.draw}"></td>
+        <td th:text="${entry.lost}"></td>
+        <td th:text="${entry.goalsFor}"></td>
+        <td th:text="${entry.goalsAgainst}"></td>
+        <td th:text="${entry.points}"></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

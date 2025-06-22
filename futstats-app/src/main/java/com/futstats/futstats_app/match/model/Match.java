@@ -1,5 +1,6 @@
 package com.futstats.futstats_app.match.model;
 
+import com.futstats.futstats_app.league.model.League;
 import com.futstats.futstats_app.team.model.Team;
 import jakarta.persistence.*;
 import lombok.*;
@@ -32,4 +33,7 @@ public class Match {
     private int awayScore;
 
     private LocalDate matchDate;
+
+    @ManyToOne
+    private League league;
 }
